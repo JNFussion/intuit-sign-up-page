@@ -64,7 +64,9 @@ a:hover{
 	text-decoration: underline;
 }
 
-
+button:hover {
+	cursor: pointer;
+ }
 /* Sign in bar */
 .sign-in-bar{
 	display: flex;
