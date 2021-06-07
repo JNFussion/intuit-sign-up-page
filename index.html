@@ -7,11 +7,20 @@
   <title>Intuit sign up</title>
 </head>
 <body>
+  <div class="disclaimer-container">
+    <div class="disclaimer">
+      <button class="btn-disclaimer"><i class="fas fa-times-circle fa-2x"></i></button>
+      <h2>** DISCLAIMER **</h2>
+      <h3>This site is a recreation of the sign up form used by Intuit for new users.</h3>
+      <p>This site was made purely for a self-learning exercise. There isn't any malicious intent.</p>
+    </div>
+  </div>
+
   <div class="sign-in-bar">
     <span>
       <p>
         Already have an Intuit account? <br>
-        <a href="">I forgot my User ID or Password</a>
+        <a href="#">I forgot my User ID or Password</a>
       </p>
     </span>
     <button class="btn-sign-in">
@@ -91,10 +100,22 @@
       </p> 
     </div>
     <div class="privacy-settings">
-      <a href="">Privacy Settings</a>
+      <a href="#">Privacy Settings</a>
     </div>
   </footer>
 
+  <!-- SCRIPT TO CLOSE THE DISCLAIMER MESSAGE-->
 
+  <script>
+    const disclaimer = document.querySelector('.disclaimer-container');
+    const btn_close = document.querySelector('.btn-disclaimer')
+      
+    function close() {
+      disclaimer.classList.add('close');
+    }
+  
+    btn_close.addEventListener('click', close);
+  
+  </script>
 </body>
 </html>
